@@ -8,6 +8,20 @@
 </head>
 <body>
 
+<%
+  java.util.Scanner sc = new java.util.Scanner(System.in);
+%>
+
+<%
+System.out.print("문자열 입력:");
+String str = sc.nextLine();
+
+
+%>
+
+문자열 : <%=str %><br>;
+
+
 
 </body>
 </html>
