@@ -20,6 +20,10 @@
 
 
 
+
+
+<%@page import="java.net.*"%>
+
 <%
 
 String userid = request.getParameter("userid");
@@ -28,10 +32,10 @@ String pwd = request.getParameter("pwd");
 
 String isForward = request.getParameter("isForward");
 
-<% @page import="java.net.*"%>
+
 if(isForward.equals("true"))
 {
-	//Forward
+	//Forward 
 
 	
 		request.setAttribute("02Page","02Page에서전달하는 내용");
