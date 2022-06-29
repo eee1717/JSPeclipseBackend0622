@@ -10,18 +10,19 @@
 
 <div id=wrapper>
 	<!--헤더  -->
-	<jsp:include page="module/header.jsp">
-	<jsp:param value="1px solid gray" name="border"/>
-	<jsp:param value="yellow" name="background"/>
-	<jsp:param value="100px" name="height"/>	
+	<jsp:include page="module/header.jsp" >
+	<jsp:param value="1px solid gray" name="border" />
+	<jsp:param value="beige" name="bgcolor" />
+	<jsp:param value="100px" name="height" />
 	</jsp:include>
+	
 	<!--네비  -->
-	<jsp:include page="module/nav.jsp"/>
+	<jsp:include page="module/nav.jsp" />
 	<!--컨텐츠  -->
 	<div>컨텐츠~</div>
 	<!--푸터 -->
-	<jsp:include page="module/footer.jsp"/>
+	<jsp:include page="module/footer.jsp" />
 </div>
 
 </body>
-</html>04Admin.jsp
+</html>

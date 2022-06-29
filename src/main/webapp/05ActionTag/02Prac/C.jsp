@@ -8,14 +8,9 @@
 </head>
 <body>
 
-<h1>C의 page</h1>
-
-ID : <%=request.getParameter("userid")%><br>
+ID : <%=request.getParameter("userid") %><br>
 PW : <%=request.getParameter("pwd") %><br>
-A : <%=request.getParameter("A") %><br>
-B : <%=request.getParameter("B") %><br>
-
-
-
+A  : <%=request.getParameter("A") %><br>
+B  : <%=request.getParameter("B") %><br>
 </body>
 </html>

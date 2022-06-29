@@ -25,11 +25,8 @@
 
         <div id="main-container">
             <!-- banner slider -->
-       <jsp:include page="../INCLUDES/banner-slider.jsp"/>
-       
-       
-       
-  
+     		<jsp:include page="../INCLUDES/banner-slider.jsp" />
+  	
             
             
             
@@ -64,8 +61,12 @@
 
           
             <!-- card -->
- 
-           <jsp:include page="../INCLUDES/Card.jsp"/>
+   			<jsp:include page="../INCLUDES/card.jsp" />
+   
+   
+   
+
+           
           
 
             <!--item slider Slick-->

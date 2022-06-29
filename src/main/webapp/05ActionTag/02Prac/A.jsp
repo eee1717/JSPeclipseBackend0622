@@ -8,15 +8,8 @@
 </head>
 <body>
 
-StartPage : <%=request.getParameter("userid")%><br>
-StartPage : <%=request.getParameter("pwd") %><br>
-
-  <jsp:forward page="B.jsp">
-  
-  <jsp:param value="A에서만든데이터" name="A" />
-  
-  </jsp:forward>
-
-
+	<jsp:forward page="B.jsp">
+		<jsp:param name="A" value="A VAL" />
+	</jsp:forward>
 </body>
 </html>

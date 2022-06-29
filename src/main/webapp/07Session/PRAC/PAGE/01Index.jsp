@@ -1,123 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 
-    <!-- common.css -->
-    <link rel="stylesheet" type="text/css" href="../CSS/common.css">
-    <!-- topmenu.css -->
-    <link rel="stylesheet" type="text/css" href="../CSS/topmenu.css">
-    <!-- maincontainer.css -->
-    <link rel="stylesheet" type="text/css" href="../CSS/maincontainer.css">
-    <!-- footer.css -->
-    <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
-    
-    <!-- BS ICON -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-
-    <!-- BS CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- BS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- JQ -->
-    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-
-    <!-- topmenu.js -->
-    <script src="../JS/topmenu.js" ></script>
-   
-   <!-- navfix.js -->
-   <script src="../JS/navfix.js" ></script>
-   
-   <!-- banner.js -->
-   <script src="../JS/banner.js" ></script>
-
-   <!-- tab.js -->
-   <script src="../JS/tab.js" ></script>
-
-    <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="../JS/slick/slick.css">
-    <script src="../JS/slick/slick.min.js"></script>    
-
-        
+<!-- link.jsp -->
+<%@include file="../INCLUDES/link.jsp" %>
 
 </head>
 <body>
 
-     <div id="wrapper">
-        
-        <!-- topmenu -->
-        <div id="topmenu">
-            <!-- header -->
-            <header>
-                <style>
-           
-
-                </style>
-                <!-- quick -->
-                <ul id="quick">
-                    <li>
-                        <!-- Sitemap -->
-                        <input type="checkbox" id="chk">
-                        <label  for="chk" id="sitemenu">
-                            <span id="top"></span>
-                            <span id="middle"></span>
-                            <span id="bottom"></span>
-                        </label>
-                            <!-- BG -->
-                            <div id="bg"></div>
-                            <!-- 모달창 -->
-                            <div id="modal"></div>
-                    </li>
-
-
-
-
-                    <!-- Login  -->
-                    <li  id="loginicon">
-                        <i class="bi bi-person" style="font-size:2.5rem;"></i>
-                    </li>
-
-                    <!--
-                    <li><a href="#">Menu3</a></li>
-                    <li><a href="#">Menu4</a></li>
-                    -->
-                </ul>
- 
-                <!-- login -->
-                <div id="loginwin" class="p-3">
-                    <div style="text-align:center;"><i class="bi bi-person" style="font-size:5rem;"></i></div>
-                    <input placeholder="Insert ID" class="form-control "><br>
-                    <input placeholder="Insert PW" class="form-control ">
-                </div>
-  
-            </header>
-            
-            <!-- nav -->
-            <nav>
-                <ul id="depth1">
-                    <li id="logo"><a href="#"><img src="#"></a></li>
-                    <li><a href="#">Menu1</a></li>
-                    <li><a href="#">Menu2</a></li>
-                    <li><a href="#">Menu3</a></li>
-                    <li><a href="#">Menu4</a></li>
-                    <li><a href="#">Menu5</a></li>
-                </ul>
-            </nav>
- 
-
-        </div> 
-
-        <!-- contents.. -->
+	<div id=wrapper>
+		<div id=topmenu>
+			<!-- header.jsp -->
+			<%@include file="../INCLUDES/header.jsp" %>
+		
+			<!-- nav.jsp -->
+			<%@include file="../INCLUDES/nav.jsp" %>
+		</div>
+		
+		        <!-- contents.. -->
 
         <div id="main-container">
             <!-- banner slider -->
@@ -414,62 +318,11 @@
             </div>
 
         </div>
-
-        <!-- footer -->
-        <style>
-            #top-element{}
-            #footer-menu{
-                display:flex;
-            }
-            #footer-menu>li{
-                width:150px;
-            }
-            #body-element{
-                margin-top:50px;
-                display:flex;
-                align-items: center;
-            }
-            #footer-logo{
-                width:100px;
-                height:100px;
-            }
-            #info{
-                width:70%;
-                height:50px;
-            }
-            #sns{
-                width:30%;
-                height:100px;
-            }
-
-        </style>
         
-        
-        <footer>
-            <div id="top-element">
-                <!-- 링크 -->
-                <ul id="footer-menu">
-                    <li>이용약관</li>
-                    <li>개인정보처리방침</li>
-                    <li>고객센터</li>
-                    <li>등등등</li>
-                    <li>등등등</li>
-                    <li>등등등</li>
-                </ul>         
-            </div>
-            <div id="body-element">
-                <!-- footer-logo -->
-                <div id="footer-logo">LOGO</div>
-                <!-- info -->
-                <div id="info">대표:홍길동...TEL.053-222-5555</div>
-                <!-- SNS -->
-                <div id="sns"> Youtube,~~</div>
-            </div>
-        </footer>
-     </div>
-     
-
-
+        <!--footer.jsp -->
+        <%@include file="../INCLUDES/footer.jsp" %> 
+	
+	</div>
 
 </body>
 </html>

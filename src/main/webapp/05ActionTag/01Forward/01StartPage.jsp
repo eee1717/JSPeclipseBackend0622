@@ -7,13 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 		<form action="02Page.jsp">
 			<input name=userid><br>
 			<input name=pwd><br>
 			<input type=submit>
-
-
+		</form>
 
 </body>
 </html>

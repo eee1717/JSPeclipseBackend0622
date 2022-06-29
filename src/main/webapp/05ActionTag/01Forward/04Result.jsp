@@ -8,14 +8,12 @@
 </head>
 <body>
 
-
 <h1>Result</h1>
 
-StartPage : <%=request.getParameter("userid")%><br>
+StartPage : <%=request.getParameter("userid") %><br>
 StartPage : <%=request.getParameter("pwd") %><br>
 02Page : <%=request.getParameter("02Page") %><br>
 03Page : <%=request.getParameter("03Page") %><br>
-
 
 </body>
 </html>

@@ -7,16 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-
-<% 	request.setCharacterEncoding("UTF-8"); %>
-
-  <jsp:forward page="03Page.jsp">
-  
-  
-  <jsp:param value="02Page에서만든데이터" name="02Page"/>
-  
-  </jsp:forward>
+ 
+	<%
+		request.setCharacterEncoding("UTF-8");
+	%>
+	<jsp:forward page="03Page.jsp" >
+		<jsp:param name="02Page" value="02Page TEST입니다" />
+	</jsp:forward>
+	
 
 </body>
 </html>

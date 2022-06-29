@@ -9,30 +9,15 @@
 <body>
 
 
-<%
-
-String height =request.getParameter("height");
-String bgcolor =request.getParameter("bgcolor");
-String border =request.getParameter("border");
-
-
-%>
-
-
-
 <div id=wrapper>
 	<!--헤더  -->
-	<jsp:include page="module/header.jsp">
-	<jsp:param value="<%=border%>" name="border"/>
-	<jsp:param value="<%=bgcolor%>" name="bgcolor"/>
-	<jsp:param value="<%=height%>" name="height"/>	
-	</jsp:include>
+	<jsp:include page="module/header.jsp" />
 	<!--네비  -->
-	<jsp:include page="module/nav.jsp"/>
+	<jsp:include page="module/nav.jsp" />
 	<!--컨텐츠  -->
 	<div>컨텐츠~</div>
 	<!--푸터 -->
-	<jsp:include page="module/footer.jsp"/>
+	<jsp:include page="module/footer.jsp" />
 </div>
 
 </body>

@@ -8,56 +8,25 @@
 </head>
 <body>
 
-
-<%@page import="java.net.*"%>
-
-<%
-
-String userid = request.getParameter("userid");
-String pwd = request.getParameter("pwd");
-String mode = request.getParameter("mode");
-
-
-if(mode.equals("type1"))
-{
-%>
-
-
-  <jsp:forward page="A.jsp"></jsp:forward>
-
-
-	
-		
-	
-<%	
-}
-else if(mode.equals("type2"))
-{
-%>
-	
-	   <jsp:forward page="B.jsp"></jsp:forward>
-	
-
-
-<%
-}
-else
-{
-%>
-
- <jsp:forward page="C.jsp"> </jsp:forward>
-
-	
-	
-	
-<% 	
-}
-
-%>
-
-
-
-
-
+	<%
+		String mode = request.getParameter("mode");
+		if(mode.equals("type1"))
+		{
+		%>
+			<jsp:forward page="A.jsp"></jsp:forward>
+		<%
+		}
+		else if(mode.equals("type2"))
+		{
+		%>
+			<jsp:forward page="B.jsp"></jsp:forward>
+		<%			
+		}
+		else{
+		%>
+			<jsp:forward page="C.jsp"></jsp:forward>
+		<%				
+		}
+	%>
 </body>
 </html>

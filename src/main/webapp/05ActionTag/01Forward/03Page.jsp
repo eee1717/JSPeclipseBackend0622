@@ -8,22 +8,9 @@
 </head>
 <body>
 
-
-
-
- <!-- 04Forward-Redirect의 내용작업들이 이 코드한줄로 똑같이 해결된다. -->
-      <jsp:forward page="04Result.jsp" >
-   <jsp:param value="03Page에서만든데이터" name="03Page"/>
-  </jsp:forward>
-
-
-
-
-
-
-
-
-
-
+	<jsp:forward page="04Result.jsp" >
+		<jsp:param name="03Page" value="03Page TEST" />
+	</jsp:forward>
+	
 </body>
 </html>
