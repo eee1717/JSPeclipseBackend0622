@@ -2,4 +2,7 @@
 JSP
 eee1717@naver.com
 토큰 비번
-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 재갱신필요
+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 
+
+
+https://github.com/jungwoogyun/JSP20220622 강사님 백엔드 깃허브

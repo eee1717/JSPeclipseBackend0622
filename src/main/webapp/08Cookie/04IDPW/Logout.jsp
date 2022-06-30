@@ -10,25 +10,10 @@
 
 <%
 
-  Cookie[] cookies = request.getCookies();
-   if(cookies!=null){
-	   
+  session.invalidate();
+  response.sendRedirect("Login.jsp");
 
-     for(int i=0;i<cookies.length;i++){
-    	 out.println(cookies[i].getName()+","+cookies[i].getValue()+"<br>");
-     }
-
-   }
 %>
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
